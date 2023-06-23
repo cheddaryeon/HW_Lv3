@@ -1,5 +1,5 @@
 import React from "react";
-import LargeBtn from "./components/Styled";
+import { LargeBtn } from "./components/Styled";
 
 function Button() {
   const LPBtnHandler = () => {
@@ -10,7 +10,9 @@ function Button() {
     <div>
       <h1>Button</h1>
       <div className="PrimaryBtn">
-        <LargeBtn onClick={LPBtnHandler}>Large Primary Button</LargeBtn>
+        <LargeBtn backcolor="yellow" onClick={LPBtnHandler}>
+          Large Primary Button
+        </LargeBtn>
       </div>
       <div className="NegativeBtn"></div>
     </div>
